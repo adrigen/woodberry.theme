@@ -1,0 +1,20 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="woodberry.theme">
+
+  <five:registerPackage package="." initialize=".initialize" />
+  <plone:static name="projectname.theme" directory="static" type="theme" />
+  <genericsetup:registerProfile
+      name="default"
+      title="woodberry.theme"
+      directory="profiles/default"
+      description="Installs the woodberry.theme package"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+  <!-- -*- extra stuff goes here -*- -->
+  
+</configure>

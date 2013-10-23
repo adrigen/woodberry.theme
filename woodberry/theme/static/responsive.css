@@ -1,0 +1,149 @@
+@import 'stylesheets/reset.css';
+body {
+  width: 100%;
+  *zoom: 1;
+}
+body:before,
+body:after {
+  content: "";
+  display: table;
+}
+body:after {
+  clear: both;
+}
+#portal-columns,
+#portal-footer-wrapper {
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.column-container {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#portal-top {
+  width: 100%;
+  display: block;
+}
+#portal-footer,
+#portal-colophon,
+#portal-siteactions {
+  display: inline;
+  float: left;
+  width: 780px;
+  margin: 0 10px;
+  margin-left: 90px;
+}
+#portal-columns {
+  display: block;
+}
+#portal-logo {
+  display: inline;
+  float: left;
+  width: 220px;
+  margin: 0 10px;
+  margin-left: 90px;
+}
+#portal-header {
+  display: block;
+  width: 979.9999999999999px;
+  margin: 0 -10px;
+  *zoom: 1;
+}
+#portal-header:before,
+#portal-header:after {
+  content: "";
+  display: table;
+}
+#portal-header:after {
+  clear: both;
+}
+#portal-header #portal-globalnav {
+  display: inline;
+  float: left;
+  width: 460px;
+  margin: 0 10px;
+  margin-left: 90px;
+}
+#portal-header #portal-subtitle {
+  display: inline;
+  float: left;
+  width: 460px;
+  margin: 0 10px;
+  margin-left: 90px;
+}
+#portal-column-content {
+  display: inline;
+  float: left;
+  width: 460px;
+  margin: 0 10px;
+  margin-left: 90px;
+}
+#portal-column-one {
+  display: inline;
+  float: left;
+  width: 220px;
+  margin: 0 10px;
+  margin-left: 90px;
+}
+#portal-footer {
+  display: inline;
+  float: left;
+  width: 460px;
+  margin: 0 10px;
+  margin-left: 250px;
+}
+section.home-copy {
+  width: 100%;
+}
+section.home-copy h2 {
+  display: inline;
+  float: left;
+  width: 140px;
+  margin: 0 10px;
+}
+section.home-copy h3 {
+  display: inline;
+  float: left;
+  width: 460px;
+  margin: 0 10px;
+  margin-left: 90px;
+}
+section.home-copy h5 {
+  display: inline;
+  float: left;
+  width: 460px;
+  margin: 0 10px;
+  margin-left: 90px;
+}
+section.home-copy p {
+  display: inline;
+  float: left;
+  width: 460px;
+  margin: 0 10px;
+  margin-left: 250px;
+}
+section.home-copy .colA {
+  display: inline;
+  float: left;
+  width: 220px;
+  margin: 0 10px;
+  margin-left: 90px;
+}
+section.home-copy .colB {
+  display: inline;
+  float: left;
+  width: 220px;
+  margin: 0 10px;
+}
+@media screen and (max-width: 720px) {
+  #portal-column-content,
+  #portal-column-one {
+    display: inline;
+    float: left;
+    width: 380px;
+    margin: 0 10px;
+    margin-bottom: 1em;
+  }
+}
