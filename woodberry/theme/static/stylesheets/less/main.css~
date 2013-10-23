@@ -14,8 +14,8 @@
 }
 @font-face {
   font-family: 'junction';
-  src: url('/++theme++woodberry.theme/webfonts/Junction-webfont.eot');
-  src: url('/++theme++woodberry.theme/webfonts/Junction-webfont.eot?#iefix') format('embedded-opentype'), url('/++theme++woodberry.theme/webfonts/Junction-webfont.woff') format('woff'), url('/++theme++woodberry.theme/webfonts/Junction-webfont.ttf') format('truetype'), url('/++theme++woodberry.theme/webfonts/Junction-webfont.svg#mission_scriptregular') format('svg');
+  src: url('webfonts/Junction-webfont.eot');
+  src: url('webfonts/Junction-webfont.eot?#iefix') format('embedded-opentype'), url('webfonts/Junction-webfont.woff') format('woff'), url('webfonts/Junction-webfont.ttf') format('truetype'), url('webfonts/Junction-webfont.svg#mission_scriptregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
