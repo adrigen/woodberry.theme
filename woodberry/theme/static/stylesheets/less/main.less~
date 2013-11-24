@@ -106,7 +106,7 @@ h1 {
 #portal-columns {
 	background-color: white;
 	margin-top: 3em;
-	margin-bottom: 4em;
+	margin-bttom: 4em;
 	.clearfix;
 }
 #portal-top {

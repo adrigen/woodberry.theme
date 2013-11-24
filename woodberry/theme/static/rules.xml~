@@ -6,9 +6,7 @@
 
     <!-- Apply the following rules to standard Plone pages -->
 
-    <stylesheet id="public.css"
-    expression="not:request/HTTP_X_THEME_ENABLED | nothing"
-    />
+
     <replace
         css:theme-children="div#portal-breadcrumbs"
         css:content-children="div#portal-breadcrumbs"
@@ -24,7 +22,7 @@
         css:content-children="ul.navTree"
         />
             
-    <replace
+   <replace
         css:theme-children="div#portal-column-content"
         css:content-children="div#portal-column-content"
         />
@@ -51,16 +49,13 @@
 
         <!-- Insert your own rules here -->
 
-    <rules css:if-content="body.section-front-page">
 
         <theme href="home.html" />
-
-    </rules>
     
     <rules css:if-not-content="body.section-front-page"
            css:if-content=".portaltype-document">
 
-        <theme href="index.html" />
+        <drop css:theme="#portal-sections"/>
 
     </rules>
     

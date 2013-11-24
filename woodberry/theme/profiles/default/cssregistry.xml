@@ -2,6 +2,8 @@
 <object name="portal_css">
 <stylesheet id="mobile.css" enabled="False" />
 <stylesheet id="public.css" enabled="False" />
+<stylesheet id="columns.css" enabled="False" />
+
 <!--  <stylesheet
     id="++theme++projectname.theme/css/theme.css"
     applyPrefix="1"

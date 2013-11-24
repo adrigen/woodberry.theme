@@ -1,5 +1,5 @@
 
-@import 'stylesheets/reset.css';
+@import 'stylesheets/resetx.css';
 @import 'stylesheets/less/grid.less';
 
 
