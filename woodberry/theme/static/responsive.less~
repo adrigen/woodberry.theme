@@ -1,5 +1,5 @@
 
-@import 'stylesheets/resetx.css';
+@import 'stylesheets/reset.css';
 @import 'stylesheets/less/grid.less';
 
 
@@ -89,8 +89,13 @@
 
 section.home-copy {
 width:100%;
+	.content {
+		.column(5);
+		.push(1);
+		}
 	h2 {
 		.column(2);
+		.push(1)
 	}
 	h3 {
 		.column(6);
@@ -102,10 +107,7 @@ width:100%;
 		.column(6);
 		.push(1);
 		}
-	p {
-		.column(6);
-		.push(3);
-	}
+
 	.colA {
 		.column(3);
 		.push(1);

@@ -7,6 +7,7 @@
     <!-- Apply the following rules to standard Plone pages -->
 
 
+
     <replace
         css:theme-children="div#portal-breadcrumbs"
         css:content-children="div#portal-breadcrumbs"
@@ -52,12 +53,31 @@
 
         <theme href="home.html" />
     
-    <rules css:if-not-content="body.section-front-page"
-           css:if-content=".portaltype-document">
+    <rules css:if-not-content="body.portaltype-woodberry-types-homepagefolder">
 
         <drop css:theme="#portal-sections"/>
 
     </rules>
-    
+    <rules css:if-content="body.portaltype-woodberry-types-homepagefolder">
+    <replace
+        css:theme-children="#portal-sections"
+        css:content-children="#portal-sections"
+        />
+
+
+    	<rules css:if-not-content="body.userrole-authenticated">
+
+        	<drop css:theme="#portal-columns"/>
+
+    	</rules>
+    	<rules css:if-content="body.userrole-authenticated">
+
+        	<drop css:theme="#mosaic"/>
+		<drop css:theme="#portal-sections"/>
+
+    	</rules>
+    </rules>
+
+
 
 </rules>
