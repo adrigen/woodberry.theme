@@ -60,10 +60,7 @@
     </rules>
     <rules css:if-content=".managePortletsLink">
 
-    <replace
-        css:theme-children="div.managePortletsLink"
-        css:content-children="div.managePortletsLink"
-        />
+        <drop css:theme="div.managePortletsLink"/>
 
     </rules>
     
