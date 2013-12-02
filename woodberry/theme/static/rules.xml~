@@ -52,12 +52,24 @@
 
 
         <theme href="home.html" />
+
+    <rules css:if-not-content=".managePortletsLink">
+
+        <drop css:theme="div.managePortletsLink"/>
+
+    </rules>
+    <rules css:if-content=".managePortletsLink">
+
+        <drop css:theme="div.managePortletsLink"/>
+
+    </rules>
     
     <rules css:if-not-content="body.portaltype-woodberry-types-homepagefolder">
 
         <drop css:theme="#portal-sections"/>
 
     </rules>
+
     <rules css:if-content="body.portaltype-woodberry-types-homepagefolder">
     <replace
         css:theme-children="#portal-sections"
@@ -78,6 +90,13 @@
     	</rules>
     </rules>
 
+    <rules css:if-content="body#plonebrowser">
 
+        <replace
+        css:theme-children="body"
+        css:content-children="body"
+        />
+
+    </rules>
 
 </rules>

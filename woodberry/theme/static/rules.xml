@@ -90,6 +90,13 @@
     	</rules>
     </rules>
 
+    <rules css:if-not-content="body.site-WLC">
 
+        <replace
+        css:theme-children="body"
+        css:content-children="body"
+        />
+
+    </rules>
 
 </rules>

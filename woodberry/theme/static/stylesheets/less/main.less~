@@ -176,7 +176,7 @@ h1 {
 }
 
 #content {
-margin: 0 3em;
+margin: 3em 0 4em ;
 }
 
 body.userrole-anonymous {
@@ -209,6 +209,17 @@ ul.navTree {
 			}	
 	}
 
+
+#content li, dl.portlet li, div.portletStaticText li {
+line-height:2em;
+margin-bottom:.75em!important;
+}
+body li.navTreeItem a {
+line-height:1.4em!important;
+}
+div.list.item {
+margin-bottom:.75em;
+}
 section#mosaic {
 	background-image: 	url(../../images/nasty_fabric.png);
 	padding: 2em 0;
@@ -279,9 +290,14 @@ section#mosaic {
 	height: 300px;
 }
 
+section.home-copy.odd h2 {
+color: @orange;
+}
+
 section.home-copy {
 	.clearfix;
 	padding:3em 0em;
+
 	h2 {
 	font-size: 200%;
 	line-height: 1
@@ -314,7 +330,10 @@ color: @dark-blue;
 			background-image: 	url(../../images/BG-dot_orange.jpg);
 			
 			}
-
+.namedblobimage-field img {
+width: 100%;
+height: auto;
+}
 	
 html,
 button,

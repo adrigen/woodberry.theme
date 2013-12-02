@@ -86,7 +86,13 @@
 	.push(3);
 }
 
-
+section.home-copy.fullwidthsectionwithnotitle {
+	.content {
+		.column(6);
+		.push(2);
+		font-size:1.5em;
+	}
+}
 section.home-copy {
 width:100%;
 	.content {
@@ -95,12 +101,10 @@ width:100%;
 		}
 	h2 {
 		.column(2);
-		.push(1)
+		.push(1);
+		
 	}
-	h3 {
-		.column(6);
-		.push(1);		
-		}
+
 	h4 {
 		}
 	h5 {
