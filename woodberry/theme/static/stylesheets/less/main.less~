@@ -65,6 +65,7 @@
 
 a {
 color: @dark-blue;
+text-decoration:underline;
 }
 body .state-private {
     color: @orange !important;
@@ -78,7 +79,7 @@ body .state-private {
     background-color: @orange!important;
 }
 #contentActionMenus dl.actionMenu.activated dd {
-    border-bottom: 0.5em solid @orange;
+    border-bottom: 0.5em solid @orange!important;
 }
 
 
@@ -176,7 +177,11 @@ h1 {
 }
 
 #content {
-margin: 3em 0 4em ;
+margin: 3em 0 5em ;
+}
+
+.image-inline {
+margin: 1em 0;
 }
 
 body.userrole-anonymous {
@@ -190,6 +195,23 @@ body.userrole-anonymous {
     border-radius:  0.5em;
     margin-top: 1em;
 
+}
+
+.thumbnail {
+    width:100%;
+    float: left;
+}
+
+#general_panel, #details_panel {
+float: left;
+}
+
+#content.dialog-wrapper {
+font-size: 90%!important;
+}
+
+#details_panel div.radioscrolllist {
+    height: 368px!important;
 }
 
 
@@ -292,6 +314,19 @@ section#mosaic {
 
 section.home-copy.odd h2 {
 color: @orange;
+}
+#portal-sections .home-copy.odd {
+	a:visited, a:link, a:active, a:hover {
+            color: white!important;
+            text-decoration: underline!important;
+	}
+}
+
+.home-copy li {
+    list-style-type: disc;
+    margin-left:1em;
+    line-height: 1.5em;
+    display: list-item;
 }
 
 section.home-copy {

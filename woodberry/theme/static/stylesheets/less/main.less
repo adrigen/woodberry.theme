@@ -63,8 +63,9 @@
   box-shadow:         @shadow;
 }
 
-a {
+a:link, a:visited, a:hover, a:active {
 color: @dark-blue;
+text-decoration:underline;
 }
 body .state-private {
     color: @orange !important;
@@ -78,7 +79,7 @@ body .state-private {
     background-color: @orange!important;
 }
 #contentActionMenus dl.actionMenu.activated dd {
-    border-bottom: 0.5em solid @orange;
+    border-bottom: 0.5em solid @orange!important;
 }
 
 
@@ -196,6 +197,23 @@ body.userrole-anonymous {
 
 }
 
+.thumbnail {
+    width:100%;
+    float: left;
+}
+
+#general_panel, #details_panel {
+float: left;
+}
+
+#content.dialog-wrapper {
+font-size: 90%!important;
+}
+
+#details_panel div.radioscrolllist {
+    height: 368px!important;
+}
+
 
 ul.navTree {
 	margin-top: 3em;
@@ -296,6 +314,19 @@ section#mosaic {
 
 section.home-copy.odd h2 {
 color: @orange;
+}
+#portal-sections .home-copy.odd {
+	a:visited, a:link, a:active, a:hover {
+            color: white!important;
+            text-decoration: underline!important;
+	}
+}
+
+.home-copy li {
+    list-style-type: disc;
+    margin-left:1em;
+    line-height: 1.5em;
+    display: list-item;
 }
 
 section.home-copy {
