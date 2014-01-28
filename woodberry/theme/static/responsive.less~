@@ -10,8 +10,8 @@
 
 // Specify the number of columns and set column and gutter widths
 @columns: 12;
-@column-width: 60;
-@gutter-width: 20;
+@column-width: 66;
+@gutter-width: 10;
 
 // Remove the definition below for a pixel-based layout
 //@total-width: 100%;
@@ -35,7 +35,8 @@
 	}
 
 .column-container {
-	width:800px;
+	.column(10);
+
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -65,7 +66,7 @@
 		.column(6,12);
 			.push(1);
 	}
-	#portal-subtitle {
+	#portal-subtitle, #portal-title {
 		.column(6);
 		//.column(6,12);
 			.push(1);
@@ -93,6 +94,11 @@ section.home-copy.fullwidthsectionwithnotitle {
 		font-size:1.5em;
 	}
 }
+section.home-copy.twocolumnsection h2 {
+		.column(2);
+		
+	}
+
 section.home-copy {
 width:100%;
 	.content {

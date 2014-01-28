@@ -7,7 +7,7 @@
     i18n_domain="woodberry.theme">
 
   <five:registerPackage package="." initialize=".initialize" />
-  <plone:static name="projectname.theme" directory="static" type="theme" />
+  <plone:static name="woodberry.theme" directory="static" type="theme" />
   <genericsetup:registerProfile
       name="default"
       title="woodberry.theme"
@@ -16,5 +16,17 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
   <!-- -*- extra stuff goes here -*- -->
+    <class class=".video.Video">
+        <implements interface=".video.IVideo" />
+    </class>
+
+    <browser:page
+        for=".video.IVideo"
+        name="sampleview"
+        class=".video.SampleView"
+        template="video_templates/sampleview.pt"
+        permission="zope2.View"
+        />
+
   
 </configure>
