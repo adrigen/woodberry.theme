@@ -113,6 +113,7 @@ h1 {
 #portal-globalnav  {
 	li{
 		display: inline;
+		white-space:nowrap;
 		list-style-type: none;
 		margin-right: 1em;
 			a{ 
@@ -224,15 +225,15 @@ ul.navTree {
 	li {
 	margin-bottom: 1em;
 		}
-	li.navTreeCurrentNode:before{
+	li.navTreeCurrentNode a:before{
 		    content: "\2192";
-		}
-		a {
-			text-decoration: none;
-			color: @body-grey;
-
-			}	
 	}
+
+	a {
+		text-decoration: none;
+		color: @body-grey;
+		}	
+}
 
 
 #content li, dl.portlet li, div.portletStaticText li {
@@ -305,14 +306,14 @@ section#mosaic {
 }
 .four-by-four {
 	width: 294px;
-	height: 300px;
+	height: 254px;
 }
 .two-by-four {
 	width: 142px;
 	height: 254px;
 }
 .six-by-four {
-	width: 448px;
+	width: 447px;
 	height: 254px;
 }
 
@@ -369,6 +370,11 @@ color: @dark-blue;
 			background-image: 	url(../../images/BG-dot_orange.jpg);
 			
 			}
+
+section.fullwidthsectionwithnotitle {
+    padding: 6em 0;
+}
+
 .namedblobimage-field img {
 width: 100%;
 height: auto;
