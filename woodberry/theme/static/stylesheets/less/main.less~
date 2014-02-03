@@ -227,15 +227,13 @@ ul.navTree {
 		}
 	li.navTreeCurrentNode a:before{
 		    content: "\2192";
-		}
-	
 	}
 
 	a {
 		text-decoration: none;
 		color: @body-grey;
 		}	
-	}
+}
 
 
 #content li, dl.portlet li, div.portletStaticText li {
@@ -260,7 +258,8 @@ section#mosaic {
 .feature-frame {
 	&.two-by-four, &.two-by-two  {
 		div.title {
-		bottom: 20px;	
+		bottom: 20px;
+		text-transform:capitalize;	
 			}
 		
 	}
