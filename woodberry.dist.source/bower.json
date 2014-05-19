@@ -1,0 +1,10 @@
+{
+  "name": "develop",
+  "private": true,
+  "dependencies": {
+    "modernizr": "~2.8.1",
+    "jquery": "~1.11.0",
+    "masonry": "~3.1.5"
+  },
+  "devDependencies": {}
+}

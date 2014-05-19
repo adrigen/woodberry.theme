@@ -1,0 +1,622 @@
+
+@font-face {
+    font-family: 'blanchcaps';
+    src: url('/++theme++woodberry.theme/webfonts/blanch_caps-webfont.eot');
+    src: url('/++theme++woodberry.theme/webfonts/blanch_caps-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/++theme++woodberry.theme/webfonts/blanch_caps-webfont.woff') format('woff'),
+         url('/++theme++woodberry.theme/webfonts/blanch_caps-webfont.ttf') format('truetype'),
+         url('/++theme++woodberry.theme/webfonts/blanch_caps-webfont.svg#blanchcaps') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'mission_scriptregular';
+    src: url('/++theme++woodberry.theme/webfonts/mission-script-webfont.eot');
+    src: url('/++theme++woodberry.theme/webfonts/mission-script-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/++theme++woodberry.theme/webfonts/mission-script-webfont.woff') format('woff'),
+         url('/++theme++woodberry.theme/webfonts/mission-script-webfont.ttf') format('truetype'),
+         url('/++theme++woodberry.theme/webfonts/mission-script-webfont.svg#mission_scriptregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'junction';
+    src: url('/++theme++woodberry.theme/webfonts/Junction-webfont.eot');
+    src: url('/++theme++woodberry.theme/webfonts/Junction-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/++theme++woodberry.theme/webfonts/Junction-webfont.woff') format('woff'),
+         url('/++theme++woodberry.theme/webfonts/Junction-webfont.ttf') format('truetype'),
+         url('/++theme++woodberry.theme/webfonts/Junction-webfont.svg#mission_scriptregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'geared';
+    src: url('/++theme++woodberry.theme/webfonts/gearedslab-webfont.eot');
+    src: url('/++theme++woodberry.theme/webfonts/gearedslab-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/++theme++woodberry.theme/webfonts/gearedslab-webfont.woff') format('woff'),
+         url('/++theme++woodberry.theme/webfonts/gearedslab-webfont.ttf') format('truetype'),
+         url('/++theme++woodberry.theme/webfonts/gearedslab-webfont.svg#geared_slabregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@dark-blue: #252074;
+@purple: #5e1cf4;
+@yellow: #f5d921;
+@orange: #ee7b2b;
+@body-grey: #333333;
+
+/* apply a natural box layout model to all elements */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+@shadow: 0 0 15px -9px #000000;
+
+#happy-v, #happy-h {
+position:absolute;
+left:0px;
+top:120px;
+}
+
+#happy-h {
+display:none;
+}
+
+.shadow {
+  -moz-box-shadow:    @shadow;
+  -webkit-box-shadow: @shadow;
+  box-shadow:         @shadow;
+}
+
+a:link, a:visited, a:hover, a:active {
+color: @dark-blue;
+text-decoration:none;
+}
+body .state-private {
+    color: @orange !important;
+}
+
+#portal-personaltools dd a:hover {
+    background: none repeat scroll 0 0 @dark-blue!important;
+}
+
+
+#contentActionMenus dl.actionMenu a, #contentActionMenus dl.actionMenu.activated dd, #contentActionMenus, #content-views {
+    background-color: @orange!important;
+}
+#contentActionMenus dl.actionMenu.activated dd {
+    border-bottom: 0.5em solid @orange!important;
+}
+
+
+h1, h2 {
+	font-family: geared;
+	text-transform: uppercase;
+	color: @orange;
+	}
+h1 {
+	font-size: 200%!important;
+	margin: 0.75em 0;
+}
+
+#portal-header {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+		h1 {
+	   margin-top: 1.5em !important;
+		}
+		h2 {
+	   font-size: 1.5em;
+	   line-height: 1;
+	   margin-bottom: 0.5em !important;
+		color: @dark-blue;
+		}
+	} 
+
+
+#portal-globalnav  {
+	li{
+		display: inline;
+		white-space:nowrap;
+		list-style-type: none;
+		margin-right: 1em;
+			a{ 
+			text-decoration: none;
+			color: @orange;
+			}
+		}
+
+}
+.managePortletsLink {
+	text-align: right;}
+
+#portal-columns {
+	background-color: white;
+	margin-top: 3em;
+	margin-bottom: 4em;
+	.clearfix;
+}
+#portal-top {
+	background-color: white;
+	height: 205px;
+	.clearfix;
+	}
+#portal-footer-wrapper {
+	background-color: white;
+	text-align: center;
+	.clearfix;
+}
+#portal-footer {
+	margin-top: 3em;
+}
+#portal-colophon {
+	display: none;
+	}
+#portal-siteactions {
+	margin-bottom: 1em; 
+		li{
+		display: inline;
+		}
+	}
+	
+#edit-bar, #content ul.formTabs, #content-core ul.formTabs {
+    border-style: solid solid none;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    display: block;
+    margin-left: 0;
+}
+
+#portal-column-content #edit-bar {
+    background-color: @orange;
+    border: 0.25em solid @orange;
+    font-size: 80%;
+    margin-bottom: 3em;
+    margin-top:2em;
+    min-height: 30px;
+    padding-top: 0.05em;
+}
+
+#content-views li.selected a, #content-views li a:hover, #content li.formTab a.selected, #content li.formTab a:hover, #content-core li.formTab a.selected, #content-core li.formTab a:hover {
+    background: none repeat scroll 0 0 White;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    color: Black;
+}
+
+#content {
+margin: 3em 0 5em ;
+}
+
+.image-inline {
+margin: 1em 0;
+}
+
+body.userrole-anonymous {
+	.contenttype-document, .contenttype-event, .contenttype-folder, .contenttype-link,  .contenttype-news-item,  .contenttype-plone-site,  .contenttype-collection, .contenttype-topic, #plone-contentmenu-factories .contenttype-file, #plone-contentmenu-factories .contenttype-image {
+	background: url("arrow.png") no-repeat scroll 0 4px rgba(0, 0, 0, 0)!important;
+	}
+}
+
+#edit-bar #contentActionMenus {
+
+    border-radius:  0.5em;
+    margin-top: 1em;
+
+}
+
+.thumbnail {
+    width:100%;
+    float: left;
+}
+
+#general_panel, #details_panel {
+float: left;
+}
+
+#content.dialog-wrapper {
+font-size: 90%!important;
+}
+
+#details_panel div.radioscrolllist {
+    height: 368px!important;
+}
+
+
+ul.navTree {
+	margin-top: 3em;
+	text-align: right;
+	li {
+	margin-bottom: 1em;
+		}
+	li.navTreeCurrentNode a:before{
+		    content: "\2192";
+	}
+
+	a {
+		text-decoration: none;
+		color: @body-grey;
+		}	
+}
+
+
+#content li, dl.portlet li, div.portletStaticText li {
+line-height:2em;
+margin-bottom:.75em!important;
+}
+body li.navTreeItem a {
+line-height:1.4em!important;
+}
+div.list.item {
+margin-bottom:.75em;
+}
+section#mosaic {
+	background-image: 	url(../../images/nasty_fabric.png);
+	padding: 10px 0;
+	}
+.hiddenStructure, .LSBox, #portal-breadcrumbs, #edit-bar {
+	display: none;
+	}
+
+
+.feature-frame {
+	&.two-by-four, &.two-by-two  {
+		div.title {
+		bottom: 20px;
+			}
+		
+	}
+	padding: 2px;
+	background-color: white;
+	margin-bottom: 10px;
+	.shadow;
+	div.title {
+		font-family: mission_scriptregular;
+    		color: white;
+		text-transform:capitalize;	
+		font-size: 175%;
+   		position: absolute;		
+   		line-height: 1;
+    		padding: 12px 0;
+		width: 110px;
+		text-align: center;
+		text-shadow: 0px 0px 6px #000; 
+		margin-top: 18px;	
+		left: 10px;
+
+		
+		/*General*/
+		transform: skewY(-10deg);
+		/*Firefox*/
+		-moz-transform: skewY(-10deg);
+		/*Microsoft Internet Explorer*/
+		-ms-transform: skewY(-10deg);
+		/*Chrome, Safari*/
+		-webkit-transform: skewY(-10deg);
+		/*Opera*/
+		-o-transform: skewX(-10deg);
+	}
+	img {
+	width:100%;
+	height:100%;
+	}
+}
+.four-by-two {
+	width: 294px;
+	height: 122px;
+}
+.two-by-two {
+	height: 122px;
+	width: 142px;
+}
+.four-by-four {
+	width: 294px;
+	height: 254px;
+}
+.two-by-four {
+	width: 142px;
+	height: 254px;
+}
+.six-by-four {
+	width: 447px;
+	height: 254px;
+}
+
+section.home-copy.odd h2 {
+color: @orange;
+}
+#portal-sections .home-copy.odd {
+	a:visited, a:link, a:active, a:hover {
+            color: white!important;
+            text-decoration: underline!important;
+	}
+}
+
+.home-copy li {
+    list-style-type: disc;
+    margin-left:1em;
+    line-height: 1.5em;
+    display: list-item;
+}
+
+section.home-copy {
+	.clearfix;
+	padding:3em 0em;
+
+	h2 {
+	font-size: 200%;
+	line-height: 1
+	}
+	h3 {
+		font-size: 150%;
+		}
+	h4 {
+		font-size: 150%;
+		}
+	h5 {
+		font-size: 150%;
+		}
+}
+
+	
+section.odd.home-copy {
+	color: white;
+	}
+
+section.even.home-copy {
+background-color: white;	
+color: @dark-blue;
+	h2 {
+		color: @orange;
+		}
+	}
+	
+	footer {
+			background-image: 	url(../../images/BG-dot_orange.jpg);
+			
+			}
+
+section.fullwidthsectionwithnotitle {
+    padding: 6em 0;
+}
+
+.namedblobimage-field img {
+width: 100%;
+height: auto;
+}
+	
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: junction;
+    background-color: @dark-blue;
+    color: @body-grey;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+
+
+
+//admin
+#portal-personaltools {
+    background: none repeat scroll 0 0 #E3E3E3;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    float: right;
+    font-size: 80%;
+    padding: 0.25em 0.5em;
+    position: relative;
+    right: 0;
+    top: 0;
+    z-index: 3;
+}
+
+#login-form {
+margin-top:1em;
+}
+
+#addimage_panel .field {
+    clear:none;
+}
+
+
+
+
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
