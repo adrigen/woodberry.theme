@@ -7,7 +7,6 @@
 // GRID //
 //////////
  
-// Specify the number of columns and set column and gutter widths
 @columns: 12;
 @column-width: 66;
 @gutter-width: 10;
@@ -76,6 +75,19 @@
 #portal-column-content {
 	.column(6);
 	.push(1);
+
+}
+#content-core div {
+	.row(6);
+}
+img.image-left {
+	.column(3, 6);
+
+}
+#portal-column-content img.image-left {
+	margin-left: -2px * (.5*@gutter-width + @column-width) !important;
+	margin-right: 1px * @gutter-width!important;
+        margin-bottom: 1px * @gutter-width!important;
 }
 #portal-column-one {
 	.column(3);
@@ -127,6 +139,8 @@ width:100%;
 		.column(3);
 	}
 }
+
+
 
 
 
