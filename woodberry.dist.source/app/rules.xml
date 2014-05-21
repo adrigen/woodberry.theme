@@ -65,6 +65,7 @@
  	<append theme="/html/head">
    		<meta http-equiv="refresh" content="0; url=http://woodberrylc.nsw.edu.au/folder_contents" />
  	</append>
+  	<drop css:theme="body"/>
         </rules>
 
     </rules>

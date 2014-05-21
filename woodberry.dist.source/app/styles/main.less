@@ -70,6 +70,13 @@ top:120px;
 display:none;
 }
 
+#toplink {
+    position: fixed;
+    right: 20px;
+    top: 115px;
+    display:none;
+}
+
 .shadow {
   -moz-box-shadow:    @shadow;
   -webkit-box-shadow: @shadow;
@@ -151,10 +158,12 @@ h1 {
 
 }
 
-#portal-header ul#portal-globalnav ul {
-	background-color:white;
-	padding:.5em;
-	margin-left:-.5em;
+#portal-header ul#portal-globalnav {
+	ul {
+		margin-left:-.5em;
+		background-color:white;
+		padding:.5em;
+	}
 	li a {
 		background-color: white !important;
 		//border-color:@orange;
@@ -163,7 +172,7 @@ h1 {
 			color:white !important;
 		}
 	}
-	li.seleceted a {
+	li.selected > a {
 			background-color: @orange !important;
 			color:white !important;
 		}
