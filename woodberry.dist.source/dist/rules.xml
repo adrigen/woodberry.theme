@@ -58,18 +58,17 @@
 
 
 <!-- go straight to folder view if logged in on homepage -->
- 
-   <rules css:if-content=".portaltype-woodberry-types-homepagefolder">
-        <rules css:if-content=".userrole-authenticated">
+<rules css:if-not-content=".template-folder_contents"> 
+   	<rules css:if-content=".portaltype-woodberry-types-homepagefolder">
+        	<rules css:if-content=".userrole-authenticated">
 
- 	<append theme="/html/head">
-   		<meta http-equiv="refresh" content="0; url=http://woodberrylc.nsw.edu.au/folder_contents" />
- 	</append>
-  	<drop css:theme="body"/>
-        </rules>
-
-    </rules>
-
+ 		<append theme="/html/head">
+   			<meta http-equiv="refresh" content="0; url=http://woodberrylc.nsw.edu.au/folder_contents" />
+ 		</append>
+  		<drop css:theme="body"/>
+        	</rules>
+   	</rules>
+</rules>
     <rules css:if-content="#visual-portal-wrapper">
 
         <theme href="index.html" />
