@@ -38,9 +38,9 @@ jQuery(function () {
         jQuery(function () {
             jQuery(window).scroll(function () {
                 if (jQuery(this).scrollTop() > 200) {
-                    jQuery('#toplink').fadeIn('slow');
+                    jQuery('#toplink').fadeIn('fast');
                 } else {
-                    jQuery('#toplink').fadeOut('slow');
+                    jQuery('#toplink').fadeOut('fast');
                 }
             });
             jQuery('#toplink').click(function () {

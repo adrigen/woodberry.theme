@@ -87,6 +87,20 @@ a:link, a:visited, a:hover, a:active {
 color: @dark-blue;
 text-decoration:none;
 }
+#visual-portal-wrapper div.listingBar a:hover {
+    color: #FFF;
+    background-color: @orange;
+    border-color: fade(@orange, 20%);
+}
+#visual-portal-wrapper div.listingBar a {
+    display: inline-block;
+    border: 0.1em solid @orange;
+    color:@orange;
+}
+#visual-portal-wrapper div.listingBar {
+    margin-bottom: 3em;
+}
+
 body .state-private {
     color: @orange !important;
 }
@@ -130,13 +144,27 @@ h1 {
 
 
 #portal-header #portal-globalnav  {
+	ul {
+		margin-left:-.5em;
+		background-color:white;
+		padding:.5em;
+	}
+	li.selected > a {
+			background-color: @orange !important;
+			color:white !important;
+		}
 	li  {
 		display: inline;
 		white-space:nowrap;
 		list-style-type: none;
 		margin-right: 1em;
 
-		a{ 
+		a { 
+
+			&:hover  {
+				background-color: @orange !important;
+				color:white !important;
+			}	
 			text-decoration: none;
 			color: @orange;
 			border: 1px solid fade(@orange, 20%) ;
@@ -144,9 +172,7 @@ h1 {
 			padding: 1px 1em 0px;
 			line-height: 1em !important;
 			padding: 0.5em 1.5em 0.5em 1em ;
-			&:hover  {
-				background-color:@orange ;
-			}
+
 		}
 		&:hover > a {
 			
@@ -157,28 +183,6 @@ h1 {
 	}
 
 }
-
-#portal-header ul#portal-globalnav {
-	ul {
-		margin-left:-.5em;
-		background-color:white;
-		padding:.5em;
-	}
-	li a {
-		background-color: white !important;
-		//border-color:@orange;
-		&:hover  {
-			background-color: @orange !important;
-			color:white !important;
-		}
-	}
-	li.selected > a {
-			background-color: @orange !important;
-			color:white !important;
-		}
-
-}
-
 
 .managePortletsLink {
 	text-align: right;}
@@ -415,7 +419,7 @@ section.home-copy {
 
 
 //specify not header
-a {
+a, #visual-portal-wrapper div.listingBar a {
 border-radius: 3px;
 margin-bottom: 1em;
 text-decoration: none;
