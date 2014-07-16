@@ -429,19 +429,32 @@ margin-right: .25em;
 	
 section.odd.home-copy {
 	color: white;
-	a {	
+	a.button {	
         	border: 1px solid fade(white, 20%); 
-		color: white;
 	}
+	a {
+		color: white;
+		border-bottom: 1px solid white;
+		border-radius: 0;
+        }
 }
 
-section.even.home-copy {
-	background-color: white;	
-	color: @dark-blue;
-	a {
+a.button {
         	border: 1px solid fade(@dark-blue, 20%); 
 		text-decoration: none;
 	}
+section.even.home-copy {
+	background-color: white;	
+	color: @dark-blue;
+	a.button {
+        	border: 1px solid fade(@dark-blue, 20%); 
+		text-decoration: none;
+	}
+	a{
+        	border-bottom: 1px solid @dark-blue; 
+		border-radius: 0;
+		text-decoration: none;
+}
 	h2 {
 		color: @orange;
 		}
